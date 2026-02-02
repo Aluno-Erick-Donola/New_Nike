@@ -1,0 +1,25 @@
+.follower {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  pointer-events: none;
+  z-index: 9999;
+  left: -35px;
+  top: -35px;
+  will-change: transform;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 4px 12px rgba(255, 68, 68, 0.3));
+}
+
+@media (max-width: 768px) {
+  .follower {
+    width: 50px;
+    height: 50px;
+    left: -25px;
+    top: -25px;
+  }
+}
