@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Checar HTML
-        run: npx htmlhint "**/*.html"
+        run: npx htmlhint "**/*.html" --ignore "out/**,node_modules/**,.next/**"
 
   validar-css:
     runs-on: ubuntu-latest
